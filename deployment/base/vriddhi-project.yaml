@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: vriddhi
+  namespace: argocd
+spec:
+  description: Project for Vriddhi applications
+  sourceRepos:
+  - https://github.com/anandrahul23/vriddhi-continuous-deployment.git # Your repo is now allowed
+  destinations:
+  - namespace: '*'
+    server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
