@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: vriddhi
   source:
-    path: userService/deployment/staging
+    path: deployment/staging
     repoURL: https://github.com/anandrahul23/vriddhi-continuous-deployment.git
     targetRevision: main
   syncPolicy:
