@@ -14,7 +14,7 @@ spec:
           stableIngress: user-service-ingress
       steps:
       - setCanaryScale:
-          replicas: 5
+          replicas: 0
       - setWeight: 20
       - pause:
           duration: 10s
